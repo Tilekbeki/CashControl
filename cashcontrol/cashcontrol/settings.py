@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-gydw12ooimj+5!2&ak(z(gtobwdh3#@@5ov_rq$%miwa_^8!h_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',
+    '127.0.0.1',
+    'localhost',
+    '10.0'
+    'www.cashcontrol.ttashbaev.ru'
+]
 
 
 # Application definition
@@ -110,6 +116,8 @@ CORS_ALLOW_ALL_ORIGINS = True  # Разрешить все домены (не р
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://0.0.0.0:8082",  # Убрали косую черту
+    "https://www.cashcontrol.ttashbaev.ru:8082"  # Убрали косую черту
 ]
 
 # Internationalization
